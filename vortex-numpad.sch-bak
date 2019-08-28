@@ -394,49 +394,14 @@ $EndComp
 $Comp
 L Device:Polyfuse_Small F?
 U 1 1 5D68D6DD
-P 8450 1600
-F 0 "F?" V 8245 1600 50  0000 C CNN
-F 1 "500mA" V 8336 1600 50  0000 C CNN
-F 2 "" H 8500 1400 50  0001 L CNN
-F 3 "~" H 8450 1600 50  0001 C CNN
-	1    8450 1600
+P 8750 1600
+F 0 "F?" V 8545 1600 50  0000 C CNN
+F 1 "Polyfuse_Small" V 8636 1600 50  0000 C CNN
+F 2 "" H 8800 1400 50  0001 L CNN
+F 3 "~" H 8750 1600 50  0001 C CNN
+	1    8750 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7750 1600 8150 1600
-Connection ~ 8150 1600
-Wire Wire Line
-	8150 1600 8350 1600
-$Comp
-L power:+5V #PWR?
-U 1 1 5D6908CB
-P 8750 1600
-F 0 "#PWR?" H 8750 1450 50  0001 C CNN
-F 1 "+5V" H 8765 1773 50  0000 C CNN
-F 2 "" H 8750 1600 50  0001 C CNN
-F 3 "" H 8750 1600 50  0001 C CNN
-	1    8750 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 1600 8550 1600
-Text GLabel 7900 1900 0    50   Output ~ 0
-D-
-Text GLabel 7900 1800 0    50   Output ~ 0
-D+
-$Comp
-L power:GND #PWR?
-U 1 1 5D692C30
-P 7450 2200
-F 0 "#PWR?" H 7450 1950 50  0001 C CNN
-F 1 "GND" H 7455 2027 50  0000 C CNN
-F 2 "" H 7450 2200 50  0001 C CNN
-F 3 "" H 7450 2200 50  0001 C CNN
-	1    7450 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 1550 8150 1600
 $Comp
 L power:VCC #PWR?
 U 1 1 5D68E36F
@@ -448,4 +413,24 @@ F 3 "" H 8150 1550 50  0001 C CNN
 	1    8150 1550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7750 1600 8150 1600
+Wire Wire Line
+	8150 1550 8150 1600
+Connection ~ 8150 1600
+Wire Wire Line
+	8150 1600 8650 1600
+$Comp
+L power:+5V #PWR?
+U 1 1 5D6908CB
+P 9250 1600
+F 0 "#PWR?" H 9250 1450 50  0001 C CNN
+F 1 "+5V" H 9265 1773 50  0000 C CNN
+F 2 "" H 9250 1600 50  0001 C CNN
+F 3 "" H 9250 1600 50  0001 C CNN
+	1    9250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1600 8850 1600
 $EndSCHEMATC
