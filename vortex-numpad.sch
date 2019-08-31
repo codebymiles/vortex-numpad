@@ -421,9 +421,9 @@ F 3 "" H 3100 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 5900 2900 5900
-Text GLabel 2250 6200 0    50   Output ~ 0
+Text GLabel 2100 6200 2    50   Input ~ 0
 D-
-Text GLabel 2250 6100 0    50   Output ~ 0
+Text GLabel 2100 6100 2    50   Input ~ 0
 D+
 $Comp
 L power:GND #PWR0112
@@ -935,7 +935,7 @@ U 1 1 5D75A309
 P 7050 3350
 F 0 "PLUS1" H 7083 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 7083 3499 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6425 3325 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers-NoLED" H 6425 3325 60  0001 C CNN
 F 3 "" H 6425 3325 60  0001 C CNN
 	1    7050 3350
 	1    0    0    -1  
@@ -959,7 +959,7 @@ U 1 1 5D75F701
 P 7050 4750
 F 0 "RETURN1" H 7083 4973 60  0000 C CNN
 F 1 "MX-NoLED" H 7083 4899 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6425 4725 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers-NoLED" H 6425 4725 60  0001 C CNN
 F 3 "" H 6425 4725 60  0001 C CNN
 	1    7050 4750
 	1    0    0    -1  
