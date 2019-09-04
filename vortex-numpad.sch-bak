@@ -421,9 +421,9 @@ F 3 "" H 3100 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 5900 2900 5900
-Text GLabel 2250 6200 0    50   Output ~ 0
+Text GLabel 2100 6200 2    50   Input ~ 0
 D-
-Text GLabel 2250 6100 0    50   Output ~ 0
+Text GLabel 2100 6100 2    50   Input ~ 0
 D+
 $Comp
 L power:GND #PWR0112

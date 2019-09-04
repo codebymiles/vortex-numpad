@@ -265,22 +265,11 @@ F 3 "~" H 2200 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
-U 1 1 5D680838
-P 1300 2150
-F 0 "C2" H 1208 2104 50  0000 R CNN
-F 1 "1uF" H 1208 2195 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 1300 2150 50  0001 C CNN
-F 3 "~" H 1300 2150 50  0001 C CNN
-	1    1300 2150
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C1
 U 1 1 5D681559
 P 1300 1850
 F 0 "C1" H 1208 1804 50  0000 R CNN
-F 1 "1uF" H 1208 1895 50  0000 R CNN
+F 1 "22uF" H 1208 1895 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-123" H 1300 1850 50  0001 C CNN
 F 3 "~" H 1300 1850 50  0001 C CNN
 	1    1300 1850
@@ -293,19 +282,6 @@ Wire Wire Line
 Connection ~ 1700 1850
 Wire Wire Line
 	1300 1950 1300 2050
-Wire Wire Line
-	1300 2050 1700 2050
-Connection ~ 1300 2050
-Connection ~ 1700 2050
-Wire Wire Line
-	1800 1950 1800 2250
-Wire Wire Line
-	1800 2250 1600 2250
-Wire Wire Line
-	1600 1950 1600 2250
-Connection ~ 1600 2250
-Wire Wire Line
-	1600 2250 1300 2250
 $Comp
 L power:GND #PWR0108
 U 1 1 5D6840FB
@@ -317,9 +293,6 @@ F 3 "" H 1300 2350 50  0001 C CNN
 	1    1300 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 2250 1300 2350
-Connection ~ 1300 2250
 $Comp
 L power:GND #PWR0109
 U 1 1 5D6850F6
@@ -1139,4 +1112,33 @@ Text GLabel 3700 3050 2    50   Input ~ 0
 COL2
 Text GLabel 3700 3150 2    50   Input ~ 0
 COL3
+$Comp
+L Device:C_Small C2
+U 1 1 5D680838
+P 1400 2050
+F 0 "C2" V 1300 2050 50  0000 R CNN
+F 1 "22uF" V 1200 2050 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 1400 2050 50  0001 C CNN
+F 3 "~" H 1400 2050 50  0001 C CNN
+	1    1400 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 2350 1300 2300
+Wire Wire Line
+	1300 2300 1600 2300
+Wire Wire Line
+	1800 1950 1800 2300
+Wire Wire Line
+	1600 1950 1600 2300
+Connection ~ 1600 2300
+Wire Wire Line
+	1600 2300 1800 2300
+Wire Wire Line
+	1300 2050 1300 2300
+Connection ~ 1300 2050
+Connection ~ 1300 2300
+Wire Wire Line
+	1500 2050 1700 2050
+Connection ~ 1700 2050
 $EndSCHEMATC
